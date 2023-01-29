@@ -1,0 +1,387 @@
+/* Jauns */
+
+@font-face{
+	font-family: 'Baloo';
+	src: url(/fonts/Baloo-Regular.ttf);
+}
+
+
+/* Ķermenis*/
+html, body {
+    overflow: hidden;
+}
+
+body{
+	user-drag: none;
+	margin-top:0px ;
+    background-color: #0F121C;
+	font-family: 'Baloo';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+	user-drag: none;
+}
+header img{
+	user-drag: none;
+}
+/*
+.chuska{
+	float: right;
+  width: 900px;
+  padding: 10px;
+	
+	
+}*/
+.chuska {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: -1;
+	width: 100%;
+    height: 100%;
+}
+
+/*Augšējā daļa*/
+ 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px 1px 40px;
+}
+ 
+.logo{
+	width: 30px;
+    cursor: pointer;
+}
+ 
+.kursa_nosaukums {
+    list-style: none;
+	color: #fff;
+	font-size: 45px;
+}
+
+.pfp{
+	background-color: #3A3A3A;
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+}
+.smadzenes{
+	
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.monetas{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skaits{
+	margin-left: 10px;
+	font-size: 30px;
+	color: #FFFFFF;
+}
+/*Navigācija*/
+
+ul {
+  list-style-type: none;
+  width: 400px;
+	background-color: #111421;
+	border-radius: 5%;
+	padding:15px 0px 200px 5px ;
+	margin: 30px 0px 0px 15px;
+}
+li{
+	display: flex; 
+  align-items: center;
+	padding-bottom: 20px;
+	
+}
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 13px 16px;
+  text-decoration: none;
+	font-size: 40px;
+}
+
+nav{
+  float: left; 
+}
+nava img{
+	width: 40px;
+	margin-right: 10px;
+}
+
+.active {
+  color: #FF8515;
+}
+
+
+/*Navigācijas zīmējumi
+
+nav .puzle{
+	width: 70px;
+	margin-right: 10px;
+	position: absolute;
+	top: 130px;
+	left: 200px;
+}
+nav .kronis{
+	width: 70px;
+	margin-right: 10px;
+	position: absolute;
+	top: auto;
+	left: 330px;
+}
+
+nav .kods{
+	width: 150px;
+	margin-right: 10px;
+	position: absolute;
+	top: auto;
+}
+
+nav .grozs{
+	width: 70px;
+	margin-right: 10px;
+	position: absolute;
+	top: auto;
+	left: 200px;
+}
+*/
+nav{
+	vertical-align: center;
+}
+/*back_button*/
+.back_button{
+	position: absolute;
+	left: 450px;
+	top:120px;
+	z-index: 1;
+}
+.back_button_free{
+	position: absolute;
+	left: 30px;
+	top:120px;
+	z-index: 1;
+}
+
+/*kursi*/
+
+.kursi{
+	margin-left: 416px;
+	width: 80%;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	align-content: center; 
+	position: relative;
+}
+.kursi_free{
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	align-content: center; 
+	position: relative;
+}
+.stundas{
+	overflow: auto;
+    max-height: 630px;
+}
+.stundas_lokacija{
+	width: 150px;
+	height:150px;
+	margin: auto; 
+	margin-bottom: 30px;
+}
+.divas_stundas{
+	margin: auto;
+	width:500px ;
+}
+.tris_stundas{
+	margin: auto;
+	width:750px ;
+}
+.stunda{
+	margin-top: 70px;
+}
+.aplis{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #C0C0C0;
+}
+.aplis img{
+	height:70px;
+	margin-top: 25%;
+}
+.stundas_nosaukums{
+	text-align: center;
+	font-family: 'baloo';
+	color: #fff;
+	font-size: 22px;
+}
+.stundas::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: transparent;
+}
+ 
+.stundas::-webkit-scrollbar-thumb {
+  background-color: #888;
+}	
+
+
+/*procenti*/
+
+.pie {
+  --w:150px;
+  
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.pie:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p)*1%),#fff 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+
+
+/*dazhaadu valodu kursi*/
+
+.kvadrats{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 25%;
+	background-color: #C0C0C0;
+}
+.kvadrats img{
+	height:100px;
+	margin-top: 20%;
+}
+.kursu_izveele{
+	margin-left: 446px;
+	width: 1080px;
+	height: 100%;
+	position: relative;
+	margin-top: 30px;
+	vertical-align: top;
+}
+
+.kurss{
+	align-items: center;
+	text-align: center;
+	align-content: center; 
+	widows: 150px;
+}
+.izveleties_kursu_nosaukums{
+	width: 150px;
+	height: 80px;
+    list-style: none;
+	color: #fff;
+	font-size: 25px;
+}
+
+.kursa_lokacija{
+	width: 150px;
+	height:150px;
+	margin-left: 50px;
+	margin-bottom: 100px;
+	display: inline-block;
+	margin-top: auto;
+	padding-top: 0px;
+	
+	vertical-align: top;
+}
+
+
+
+
+
+/*līderu saraksts*/
+
+.lideru_sar{
+	
+}
+.liider{
+	display: flex;
+	flex-direction: row;
+}
+.ligas{
+	
+}
+
+.podiums{
+	
+}
+
+.podiums_bilde{
+}
+.lideru_saraksts{
+	
+}
+
+
+/*galvenā lapa*/
+
+.planeeta{
+	margin: 3%;
+	width: 100%;
+	
+	vertical-align: center;
+	
+}
+el{
+	text-decoration: dashed underline #A8A7A7;
+}
+.teksts{
+	width:47%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: center;
+	margin-top: 0px;
+	position: absolute;
+	top: 35%;
+	font-size: 25px;
+	
+}
+.teksts h2{
+	color: white;
+	align-items: center;
+	text-align: center;
+	align-content: center; 
+}
+.bilde_planeeta_div{
+	display: inline-block;
+	width: 47%;
+}
+.bilde_planeeta{
+	width:100%;
+}
+.registreties{
+	margin-top: 20px;
+	width: 500px;
+}
